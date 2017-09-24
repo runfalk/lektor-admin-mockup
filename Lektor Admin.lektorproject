@@ -1,2 +1,5 @@
 [project]
 name = Mockup Admin
+
+[servers.ghpages]
+target = ghpages://runfalk/lektor-admin-mockup
