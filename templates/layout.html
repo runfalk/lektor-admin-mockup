@@ -1,0 +1,32 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<title>{% block title %}Welcome{% endblock %} — Lektor Admin</title>
+<body>
+  <header>
+    <span class="admin-title">
+      <i class="svg-icon  svg-icon-egg"></i>
+      {{ site.config.PROJECT.name }}
+    </span>
+    <nav>
+      {% for child in site.get("/").children.order_by("order") %}
+        <a href="{{ child|url }}" class="{{ 'active' if this.is_child_of(child.path) }}"">
+          {{ child.title }}
+        </a>
+      {% endfor %}
+    </nav>
+    <input class="search" type="text" placeholder="Search">
+    <a href="/">Back</a>
+  </header>
+  <div class="main">
+    <div class="sidebar">
+      Sidebar
+    </div>
+    <div class="content">
+      {% block body %}{% endblock %}
+    </div>
+  </div>
+  <footer>
+    Maybe some useful links here
+  </footer>
+</body>

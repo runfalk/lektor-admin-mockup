@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #baaab2;
+    font-family: Roboto Slab;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+header {
+    padding: 0.6rem;
+    background: #401a29;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header > * + * {
+    margin-left: 1rem;
+}
+
+.admin-title {
+    white-space: nowrap;
+    width: 10rem;
+    display: block;
+    font-size: 1.4rem;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
+
+header a {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: 0.15s background ease-in;
+}
+header nav > * + * {
+    margin-left: 1rem;
+}
+header a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+header a.active,
+header a.active:hover {
+    color: #401a29;
+    background: #fff;
+}
+
+header .search {
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    font: inherit;
+    border-radius: 0.4rem;
+}
+
+.main {
+    background: #f0f0f0;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    grid-template-areas: "sidebar content";
+    grid-column-gap: 1rem;
+}
+
+.main > * {
+    padding: 0.6rem;
+}
+
+
+footer {
+    padding: 0.6rem;
+}
+
+a#lektor-edit-link {
+    top: auto;
+    bottom: 10px;
+}
+
+.svg-icon {
+    width: 0.75em;
+    height: 0.75em;
+    display: inline-block;
+    vertical-align: baseline;
+    background-color: currentColor;
+}
+
+.svg-icon-egg {
+    mask-image: url(egg.svg);
+}
+
+fieldset {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: none;
+}
+fieldset > legend {
+    background: #ccc;
+    display: inline-block;
+}
+.controls {
+    border: 1px solid #ccc;
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.form-group-title {
+    padding: 0.2rem 0.4rem;
+    display: inline-block;
+    background: #ccc;
+    color: #3d3639;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.2rem 0.4rem;
+    margin: 0;
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.form-group textarea {
+    min-height: 5rem;
+}

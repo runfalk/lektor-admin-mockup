@@ -1,0 +1,7 @@
+_model: page
+---
+title: Assets
+---
+body: List of available assets and the possibility to preview them, and reveal the file in folder
+---
+order: 3

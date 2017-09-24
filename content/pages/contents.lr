@@ -1,0 +1,9 @@
+_model: page
+---
+title: Pages
+---
+order: 0
+---
+body: Edit pages and see hierarchy, a page view must show children and attachments. preferable attachments have the same functionality as the assets tab
+---
+_template: admin-page.html

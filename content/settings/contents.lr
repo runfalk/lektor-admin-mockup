@@ -1,0 +1,7 @@
+_model: page
+---
+title: Settings
+---
+order: 10
+---
+body: Project settings such as plugins, global variables, deploy targets, custom extensions, settings alternatives

@@ -1,0 +1,9 @@
+title: Lektor Admin
+---
+body:
+
+This is a mockup of what a redesigned Lektor admin UI could look like. There are a few outstanding issues that have yet to be dealt with:
+
+- Publish button
+- Rebuild button
+- Return to website button is cryptically named Back

@@ -1,0 +1,7 @@
+_model: page
+---
+title: Templates
+---
+order: 5
+---
+body: List and edit templates, copy, delete (gives confirmation, checks if in use)
